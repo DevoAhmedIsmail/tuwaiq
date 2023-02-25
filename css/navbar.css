@@ -1,0 +1,129 @@
+nav.navbar {
+    background-color: #ffffffa1;
+    padding: 10px 5px;
+    z-index: 9999;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+}
+
+nav.navbar .logo_wrapper {
+    width: 158px;
+    height: 94px;
+
+}
+
+nav.navbar .logo_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+nav.navbar .nav-items-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav.navbar ul {
+    list-style: none;
+}
+
+nav.navbar .navbar_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav.navbar .navbar_links .navbar_link {
+    color: #000;
+    cursor: pointer;
+    padding: 35px 0;
+    font-weight: bold;
+}
+
+nav.navbar .nav_dropdown {
+    position: relative;
+}
+
+nav.navbar .nav_dropdown:hover .nav_dropdown_list{
+    opacity: 1;
+    visibility: visible;
+}
+
+nav.navbar .nav_dropdown_list {
+    position: absolute;
+    top:90px;
+    background-color: #fff;
+    padding: 10px 20px;
+    min-width: 120px ;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav.navbar .nav_dropdown_list a {
+    padding: 10px 5px;
+    display: block;
+}
+
+nav.navbar .menu_bar {
+    display: none;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+.sidebar_navbar {
+    display: none;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    opacity: 0;
+    visibility: hidden;
+    height: 100vh;
+    padding: 10px 0px;
+    min-width: 200px;
+    transition: all 300ms;
+    z-index: 9999;
+}
+
+.sidebar_navbar.active {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidebar_navbar ul {
+    list-style: none;
+}
+
+.sidebar_navbar ul li {
+    padding: 10px 20px;
+}
+
+.sidebar_navbar ul li a {
+    text-decoration: none;
+}
+
+@media (width < 850px) {
+    nav.navbar .menu_bar {
+        display: block;
+    }
+    nav.navbar .navbar_links {
+        display: none;
+    }
+
+    .sidebar_navbar {
+        display: block;
+    }
+
+
+}

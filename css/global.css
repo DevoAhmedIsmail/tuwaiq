@@ -1,0 +1,90 @@
+ @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mainColor: #c6a367;
+    --secondColor: #002e5b;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.bg-main {
+    background-color: var(--mainColor);
+}
+
+.bg-second {
+    background-color: var(--secondColor);
+}
+
+.test-main {
+    background-color: var(--mainColor);
+}
+
+.test-second {
+    background-color: var(--secondColor);
+}
+
+.section_title,
+.section_title_2 {
+    color: var(--mainColor);
+}
+
+.section_title p,
+.section_title_2 p {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    font-weight: bold;
+    /* font-size: 26px; */
+    overflow: hidden;
+}
+
+.section_title p::before,
+.section_title p::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--mainColor);
+    top: 50%;
+}
+
+.section_title p::before {
+    right: 0;
+}
+
+.section_title p::after {
+    left: 0;
+}
+
+.section_title_2 p::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 18px;
+    left: 0;
+    height: 4px;
+    box-shadow: 1px 1px 1px #c6a36773;
+    background-color: #c6a36773;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #002e5b8f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms;
+    opacity: 0;
+}

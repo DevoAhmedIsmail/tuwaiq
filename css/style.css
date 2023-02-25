@@ -1,0 +1,11 @@
+.vendorss .owl-carousel .owl-item {
+    height: 123px;
+}
+.vendorss .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    /* padding: 20px; */
+    padding: 5px;
+    border: 2px solid var(--secondColor);
+    height: 100%;
+}
