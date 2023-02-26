@@ -56,7 +56,7 @@ $(document).ready(function(){
               items:2
           },
           576:{
-              items:6
+              items:4
           },
           768:{
               items:8

@@ -22,12 +22,12 @@ body {
     background-color: var(--secondColor);
 }
 
-.test-main {
-    background-color: var(--mainColor);
+.text-main {
+    color: var(--mainColor);
 }
 
-.test-second {
-    background-color: var(--secondColor);
+.text-second {
+    color: var(--secondColor);
 }
 
 .section_title,

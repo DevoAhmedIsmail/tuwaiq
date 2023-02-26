@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.theme.default.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Bootstrap & Tailwind  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Tuwaiq</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- Topbar -->
+    <div class="top_bar bg-second ">
+        <div class="container mx-auto">
+            <div class="d-flex items-center justify-between text-white">
+                <div class="d-flex gap-2 items-center">
+                    <a href="download-center.html" class="py-2 px-2 cursor-pointer bg-main text-second hover:text-black fw-bolder">
+                        <i class="fa-solid fa-download ml-2"></i><span>مركز التحميل</span>
+                    </a>
+                    <p><i class="fa-solid fa-phone ml-2"></i><span>0557491690</span></p>
+                    <p><i class="fa-solid fa-envelope-open ml-2"></i><span>@ElbenaCompany</span></p>
+                </div>
+                <div class=" items-center gap-4 hidden lg:flex ">
+                    <div class="d-flex gap-3">
+                        <i class="fa-brands fa-twitter cursor-pointer hover:text-yellow-500"></i>
+                        <i class="fa-brands fa-facebook-f cursor-pointer hover:text-yellow-500"></i>
+                        <i class="fa-brands fa-linkedin-in cursor-pointer hover:text-yellow-500"></i>
+                        <i class="fa-brands fa-instagram cursor-pointer hover:text-yellow-500"></i>
+                    </div>
+                    <p class="cursor-pointer hover:text-yellow-500"><i
+                            class="fa-solid fa-magnifying-glass ml-2"></i><span>ابحث الان</span></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Topbar -->
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container mx-auto d-block">
+            <div class="nav-items-wrapper pl-0 lg:pl-32">
+                <a href="#">
+                    <div class="logo_wrapper">
+                        <img src="img/logo_1.png" alt="logo">
+                    </div>
+                </a>
+                <div class="navbar_links">
+                    <a href="index.html" class="navbar_link">الرئيسية</a>
+                    <div href="#" class="navbar_link nav_dropdown">
+                        <span>الخدمات <i class="fa-solid fa-chevron-down"></i></span>
+                        <ul class="nav_dropdown_list rounded">
+                            <li><a href="#" class="hover:text-red-500">خدمة 1</a></li>
+                            <li><a href="#" class="hover:text-red-500">خدمة 2</a></li>
+                            <li><a href="#" class="hover:text-red-500">خدمة 3</a></li>
+                        </ul>
+                    </div>
+                    <div href="#" class="navbar_link nav_dropdown">
+                        <span>المشاريع <i class="fa-solid fa-chevron-down"></i></span>
+                        <ul class="nav_dropdown_list rounded">
+                            <li><a href="photos.html" class="hover:text-red-500">الصور</a></li>
+                            <li><a href="#" class="hover:text-red-500">الفيديوهات</a></li>
+                        </ul>
+                    </div>
+                    <a href="blogs.html" class="navbar_link">المدونة</a>
+                </div>
+                <div class="menu_bar"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </div>
+    </nav>
+    <div class="sidebar_navbar">
+        <div>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+
+    <!-- Projects -->
+    <section class="projects py-5 mt-16">
+        <div class="container mx-auto">
+            <div class="section_title_2 text-center mt-5">
+                <p class="text-3xl">فيديوهات من عملية التصنيع</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mt-8">
+                    <div class="w-full h-72 relative rounded group overflow-hidden">
+                        <a href="img/our-projects/videos/vid-01.mp4" data-fancybox="group-2" class="relative">
+                            <img src="img/our-projects/videos/vid-01.PNG" alt="" class="w-full h-full object-cover group-hover:scale-150 transition duration-1000">
+                            <div class="overlay group-hover:h-full group-hover:opacity-100">
+                                <p class="fw-bold text-xl">
+                                    <i class="fa-solid fa-play text-5xl group-hover:text-yellow-300"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-8">
+                    <div class="w-full h-72 relative rounded group overflow-hidden">
+                        <a href="img/our-projects/videos/vid-02.mp4" data-fancybox="group-2" class="relative">
+                            <img src="img/our-projects/videos/vid-02.PNG" alt="" class="w-full h-full object-cover group-hover:scale-150 transition duration-1000">
+                            <div class="overlay group-hover:h-full group-hover:opacity-100">
+                                <p class="fw-bold text-xl">
+                                    <i class="fa-solid fa-play text-5xl group-hover:text-yellow-300"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-8">
+                    <div class="w-full h-72 relative rounded group overflow-hidden">
+                        <a href="img/our-projects/videos/vid-03.mp4" data-fancybox="group-2" class="relative">
+                            <img src="img/our-projects/videos/vid-03.PNG" alt="" class="w-full h-full object-cover group-hover:scale-150 transition duration-1000">
+                            <div class="overlay group-hover:h-full group-hover:opacity-100">
+                                <p class="fw-bold text-xl">
+                                    <i class="fa-solid fa-play text-5xl group-hover:text-yellow-300"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-8">
+                    <div class="w-full h-72 relative rounded group overflow-hidden">
+                        <a href="img/our-projects/videos/vid-04.mp4" data-fancybox="group-2" class="relative">
+                            <img src="img/our-projects/videos/vid-04.PNG" alt="" class="w-full h-full object-cover group-hover:scale-150 transition duration-1000">
+                            <div class="overlay group-hover:h-full group-hover:opacity-100">
+                                <p class="fw-bold text-xl">
+                                    <i class="fa-solid fa-play text-5xl group-hover:text-yellow-300"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-8">
+                    <div class="w-full h-72 relative rounded group overflow-hidden">
+                        <a href="img/our-projects/videos/vid-05.mp4" data-fancybox="group-2" class="relative">
+                            <img src="img/our-projects/videos/vid-05.PNG" alt="" class="w-full h-full object-cover group-hover:scale-150 transition duration-1000">
+                            <div class="overlay group-hover:h-full group-hover:opacity-100">
+                                <p class="fw-bold text-xl">
+                                    <i class="fa-solid fa-play text-5xl group-hover:text-yellow-300"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-8">
+                    <div class="w-full h-72 relative rounded group overflow-hidden">
+                        <a href="img/our-projects/videos/vid-06.mp4" data-fancybox="group-2" class="relative">
+                            <img src="img/our-projects/videos/vid-06.PNG" alt="" class="w-full h-full object-cover group-hover:scale-150 transition duration-1000">
+                            <div class="overlay group-hover:h-full group-hover:opacity-100">
+                                <p class="fw-bold text-xl">
+                                    <i class="fa-solid fa-play text-5xl group-hover:text-yellow-300"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-8">
+                    <div class="w-full h-72 relative rounded group overflow-hidden">
+                        <a href="img/our-projects/videos/vid-07.mp4" data-fancybox="group-2" class="relative">
+                            <img src="img/our-projects/videos/vid-07.PNG" alt="" class="w-full h-full object-cover group-hover:scale-150 transition duration-1000">
+                            <div class="overlay group-hover:h-full group-hover:opacity-100">
+                                <p class="fw-bold text-xl">
+                                    <i class="fa-solid fa-play text-5xl group-hover:text-yellow-300"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-8">
+                    <div class="w-full h-72 relative rounded group overflow-hidden">
+                        <a href="img/our-projects/videos/vid-08.mp4" data-fancybox="group-2" class="relative">
+                            <img src="img/our-projects/videos/vid-08.PNG" alt="" class="w-full h-full object-cover group-hover:scale-150 transition duration-1000">
+                            <div class="overlay group-hover:h-full group-hover:opacity-100">
+                                <p class="fw-bold text-xl">
+                                    <i class="fa-solid fa-play text-5xl group-hover:text-yellow-300"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-8">
+                    <div class="w-full h-72 relative rounded group overflow-hidden">
+                        <a href="img/our-projects/videos/vid-09.mp4" data-fancybox="group-2" class="relative">
+                            <img src="img/our-projects/videos/vid-09.PNG" alt="" class="w-full h-full object-cover group-hover:scale-150 transition duration-1000">
+                            <div class="overlay group-hover:h-full group-hover:opacity-100">
+                                <p class="fw-bold text-xl">
+                                    <i class="fa-solid fa-play text-5xl group-hover:text-yellow-300"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-8">
+                    <div class="w-full h-72 relative rounded group overflow-hidden">
+                        <a href="img/our-projects/videos/vid-10.mp4" data-fancybox="group-2" class="relative">
+                            <img src="img/our-projects/videos/vid-10.PNG" alt="" class="w-full h-full object-cover group-hover:scale-150 transition duration-1000">
+                            <div class="overlay group-hover:h-full group-hover:opacity-100">
+                                <p class="fw-bold text-xl">
+                                    <i class="fa-solid fa-play text-5xl group-hover:text-yellow-300"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-8">
+                    <div class="w-full h-72 relative rounded group overflow-hidden">
+                        <a href="img/our-projects/videos/vid-11.mp4" data-fancybox="group-2" class="relative">
+                            <img src="img/our-projects/videos/vid-11.PNG" alt="" class="w-full h-full object-cover group-hover:scale-150 transition duration-1000">
+                            <div class="overlay group-hover:h-full group-hover:opacity-100">
+                                <p class="fw-bold text-xl">
+                                    <i class="fa-solid fa-play text-5xl group-hover:text-yellow-300"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                 
+            </div>
+        </div>
+    </section>
+    <!-- End Projects -->
+
+    
+    
+    <!-- Footer -->
+    <footer class="bg-second py-5">
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="w-full h-32">
+                        <img src="img/logo.png" alt="logo" class="w-full h-full object-contain">
+                    </div>
+                    <p class="text-gray-400 text-center mt-3">تركيب وتوريد الحجر الطبيعي للقصور والفلل والمباني -نقوم بإعداد التصاميم وفق المقاسات المناسبة لواجهات الحجر الطبيعي نوفر جميع أنواع الحجر الطبيعي بأحدث الطرق المستخدمة والمضمونة شركة البناء لتوريد وتركيب وتنظيف الحجر الطبيعي والرخام والجرانيت (تصميم، نحت، ديكورات </p>
+                </div>
+                <div class="col-md-4">
+                   <div class="px-5">
+                        <div class="section_title text-center">
+                            <p class="text-xl">روابط اضافية</p>
+                        </div>
+                        <div class="flex justify-center gap-10">
+                            <ul>
+                                <li class="py-2"><a href="#" class="text-white"><i class="fa-solid fa-circle-arrow-left text-second"></i> المدونة</a></li>
+                                <li class="py-2"><a href="#" class="text-white"><i class="fa-solid fa-circle-arrow-left text-second"></i> من نحن</a></li>
+                                <li class="py-2"><a href="#" class="text-white"><i class="fa-solid fa-circle-arrow-left text-second"></i> مشاريعنا</a></li>
+                                <li class="py-2"><a href="#" class="text-white"><i class="fa-solid fa-circle-arrow-left text-second"></i> خدماتنا</a></li>
+                            </ul>
+                            <ul>
+                                <li class="py-2"><a href="#" class="text-white"><i class="fa-solid fa-circle-arrow-left text-second"></i> الاخبار</a></li>
+                                <li class="py-2"><a href="#" class="text-white"><i class="fa-solid fa-circle-arrow-left text-second"></i> عملاؤنا</a></li>
+                                <li class="py-2"><a href="#" class="text-white"><i class="fa-solid fa-circle-arrow-left text-second"></i> تسجيل</a></li>
+                                <li class="py-2"><a href="#" class="text-white"><i class="fa-solid fa-circle-arrow-left text-second"></i> عن الشركة</a></li>
+                            </ul>
+                        </div>
+                   </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="section_title text-center">
+                        <p class="text-xl">بيانات التواصل</p>
+                    </div>
+                    <ul class="text-white">
+                        <li class="mb-3 text-lg">
+                            <p><i class="fa-solid fa-location-dot ml-3"></i> الرياض, المملكة العربية السعودية</p>
+                        </li>
+                        <li class="mb-3 text-lg">
+                            <p><i class="fa-solid fa-phone-flip ml-3"></i> 0557491690</p>
+                        </li>
+                        <li class="mb-3 text-lg">
+                            <p><i class="fa-solid fa-headset ml-3"></i> 0544440399</p>
+                        </li>
+                        <li class="mb-3 text-lg">
+                            <p><i class="fa-regular fa-envelope ml-3"></i> @ElbenaCompany</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-500 mt-3">
+                <ul class="flex justify-center items-center py-3 gap-10">
+                    <li><a href="https://www.instagram.com/elbenacompany/" target="_blank"><i class="fa-brands fa-instagram text-white text-3xl"></i></a></li>
+                    <li><a href="https://twitter.com/ElbenaCompany" target="_blank"><i class="fa-brands fa-twitter text-white text-3xl"></i></a></li>
+                    <li><a href="https://www.instagram.com/elbenacompany/" target="_blank"><i class="fa-brands fa-facebook-f text-white text-3xl"></i></a></li>
+                </ul>
+                <p class="text-center text-white">جميع الحقوق محفوظة &copy; 2023</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Javascripts -->
+    <!-- Tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/tailwind.config.js"></script>
+    <!-- Fonts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- Local js -->
+    <script src="./js/carousel.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
