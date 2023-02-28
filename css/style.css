@@ -75,6 +75,22 @@
     font-size: 20px;
 
 }
+.single-service ul{
+    border: 3px solid #f2f7fd;
+    padding: 20px;
+    margin: 10px 2px;
+}
+.single-service ul li{
+    padding:10px 10px;
+    border-bottom: 1px solid #ebf3fd;
+}
+.single-service ul li:hover{
+    background-color: #D3B975;
+}
+
+.single-service ul li.active{
+    background-color: #D3B975;
+}
 .benefits span{
     background: #D3B975;
     width: 28px;
@@ -85,6 +101,17 @@
     text-align: center;
     float: right;
 }
+
+.benefits ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.benefits ul li span {
+    margin-left: 5px;}
+
 .boxes{
     padding:20px 10px;
     background: #131e4a;
@@ -95,4 +122,32 @@
 .boxes .icon{
     position: absolute;
     margin-left: 10px !important;
+}
+.part2{
+    position: relative;
+   
+
+}
+.part2 .overlay{
+    position: absolute;
+    top: 0;
+    background-color: #131e4ad6;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.part2 h5{
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.part2 a{
+    padding: 10px 20px;
+    display: block;
+    background: #D3B975;
+    color: #fff;
+    border-radius: 40px;
+    text-align: center;
 }
