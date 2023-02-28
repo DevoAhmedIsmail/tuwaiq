@@ -69,3 +69,30 @@
 #comment{
     margin-top:15px;
 }
+/*service*/
+.single-service h2{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.benefits span{
+    background: #D3B975;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    float: right;
+}
+.boxes{
+    padding:20px 10px;
+    background: #131e4a;
+    color:#fff;
+    position: relative;
+    
+}
+.boxes .icon{
+    position: absolute;
+    margin-left: 10px !important;
+}
