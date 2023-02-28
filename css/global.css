@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -87,4 +88,37 @@ body {
     align-items: center;
     transition: all 300ms;
     opacity: 0;
+}
+
+/* Pages background */
+.bg-page {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-page div {
+    z-index: 88888;
+    margin-top: 125px;
+    position: relative;
+}
+
+.bg-page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
