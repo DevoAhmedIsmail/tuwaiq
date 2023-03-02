@@ -81,18 +81,19 @@ nav.navbar .menu_bar {
 
 .sidebar_navbar {
     display: none;
-    background-color: #fff;
-    color: #000;
-    position: absolute;
+    background-color: var(--secondColor);
+    color: #fff;
+    position: fixed;
     top: 0;
     left: -200px;
+    bottom: 0;
     opacity: 0;
     visibility: hidden;
-    height: 100vh;
-    padding: 10px 0px;
-    min-width: 200px;
+    min-height: 100vh;
+    padding: 30px 0px 10px 0;
+    min-width: 300px;
     transition: all 300ms;
-    z-index: 9999;
+    z-index: 99999999;
 }
 
 .sidebar_navbar.active {
@@ -101,16 +102,24 @@ nav.navbar .menu_bar {
     visibility: visible;
 }
 
+.sidebar_navbar.sidebar_navbar .close_btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
 .sidebar_navbar ul {
     list-style: none;
 }
 
-.sidebar_navbar ul li {
-    padding: 10px 20px;
+.sidebar_navbar ul li:not(:last-child) {
+    border-bottom: 2px solid #7878786e;
 }
 
 .sidebar_navbar ul li a {
     text-decoration: none;
+    padding: 15px 20px;
+    display: block;
 }
 
 @media (width < 850px) {

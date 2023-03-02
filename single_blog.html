@@ -90,27 +90,45 @@
             </div>
         </div>
     </nav>
-    <div class="sidebar_navbar">
+    <div class="sidebar_navbar bg_second">
+        <span class="close_btn"><i class="fa-solid fa-xmark text-red-500 text-3xl cursor-pointer"></i></span>
         <div>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="index.html">الرئيسية</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="services.html">الخدمات</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="photos.html">المشاريع</a>
+                </li>
+                <li>
+                    <a href="blogs.html">المدونة</a>
+                </li>
+                <li>
+                    <a href="about.html">من نحن</a>
+                </li>
+                <li>
+                    <a href="contact.html">اتصل بنا</a>
                 </li>
             </ul>
         </div>
     </div>
     <!-- End Navbar -->
+
+    <div class="bg-page" style="background-image: url('img/page-header/blogs.jpg');">
+        <div class="mr-16">
+            <p class="text-3xl font-bold">عنوان المدونه</p>
+            <p class="text-xl mt-2"><a href="index.html">الرئيسية</a><i class="fa-solid fa-angles-left px-2"></i><a href="blogs.html" class="">المدونات</a><i class="fa-solid fa-angles-left px-2"></i><span class="text-yellow-500">عنوان المدونه</span></p>
+        </div>
+    </div>
+
    <!-----start single_plog-->
-   <div class="single_plog pt-32 pb-5 px-16 ">
+   <div class="single_plog pt-6 pb-5 px-16 bg-gray-100">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-3">
                 <div class="bg-white p-4 mt-3 rounded shadow">
                     <form class="relative">
                         <input type="text" class="form-control py-3" placeholder="ابحث عن.....">
@@ -160,7 +178,7 @@
                         </div>
                 </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-lg-9">
                 <div class="section_title text-center">
                     <p class="text-center text-3xl">عنوان المدونة</p>
                 </div>
@@ -181,24 +199,28 @@
                      <div class="row">
                          <div class="col-md-6">
                            <div class="w-full h-64">
-                             <img src="img/our-projects/photos/gallery-10-1.jpg" class="w-full h-full">
+                             <img src="img/our-projects/photos/gallery-10-1.jpg" class="w-full h-full shadow">
                            </div>
-                           <ul class="unstyled-type">
-                             <li>
-                                 <a href="" class="item">مباني</a>
-                                 <a href="" class="item">فلل</a>
-                                 <a href="" class="item">قصور</a>
-                                 <a href="" class="item">تصميمات</a>
-                             </li>
-                           </ul>
+                           
                          </div>
                          <div class="col-md-6">
                              <div class="w-full h-64">
-                                 <img src="img/our-projects/photos/gallery-6-1.jpg" class="w-full h-full">
+                                 <img src="img/our-projects/photos/gallery-6-1.jpg" class="w-full h-full shadow">
                              </div>
-                             <div class="post-comment"><a href="">تعليقات (0)</a></div>
+                            
                           </div>
                      </div>
+                     <div class="flex justify-between items-center">
+                        <ul class="unstyled-type">
+                            <li class="my-4">
+                                <a href="" class="item bg-gray-200 ">مباني</a>
+                                <a href="" class="item bg-gray-200 ">فلل</a>
+                                <a href="" class="item bg-gray-200 ">قصور</a>
+                                <a href="" class="item bg-gray-200 ">تصميمات</a>
+                            </li>
+                          </ul>
+                          <div class="post-comment"><a href="" class="text-lg">تعليقات (0)</a></div>
+                       </div>
                  </div>
                 </div>
                 <!----angles-->
@@ -223,27 +245,26 @@
                  </div>
                 </div>
                 <!---comments-->
-                <div class="Reviews px-2">
-                 <div class="container">
-                     <h3>اترك رد</h3>
-                     <p class="comment-note py-2">لن يتم نشر عنوان بريدك الإلكتروني. الحقول المطلوبة محددة*</p>
-                     <div class="row">
-                         <div class="col-md-6">
-                         <input id="author" class="form-control" placeholder="الاسم *" name="author" type="text" value="" size="30" aria-required="true">
-                       </div>
-                       <div class="col-md-6">
-                         <input id="author" class="form-control" placeholder="البريد الالكترونى *" name="author" type="email" value="" size="30" aria-required="true">
-                         
-                       </div>
-                      
-                         <div class="col-md-12">
-                             <textarea placeholder="تعليق" class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
-                           </div>
-                         
-                       </div>
-             
-                     </div>
-                 </div>
+                <div class="Reviews">
+                        <div class="border p-5 bg-white shadow rounded">
+                            <h3>اترك رد</h3>
+                            <p class="comment-note py-2">لن يتم نشر عنوان بريدك الإلكتروني. الحقول المطلوبة محددة*</p>
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input id="author" class="form-control" placeholder="الاسم *" name="author" type="text" value="" size="30" aria-required="true">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input id="author" class="form-control" placeholder="البريد الالكترونى *" name="author" type="email" value="" size="30" aria-required="true">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea placeholder="تعليق" class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+                                    </div>
+                                </div>
+                                <button class="py-3 px-5 bg-main text-white rounded block mr-auto mt-3">انشر</button>
+                            </form>
+                        </div>
+                </div>
             </div>
         </div>
     </div>

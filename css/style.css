@@ -19,9 +19,7 @@
     font-size: 20px;
     /*color:#e1dede*/
 }
-.single_plog img{
-    box-shadow: 4px 4px #dfd9d9;
-}
+
 .plogs .item{
     display: inline-block;
     padding: 9px 15px;
@@ -48,13 +46,12 @@
     margin-left:10px;
 }
 .angles h4{
-    font-size: 19px;
+    font-size: 20px;
     font-weight: bold;
 }
 
     /*comments*/
     .Reviews{
-        padding: 30px;
         margin:20px 10px !important;
     
     }
@@ -70,11 +67,7 @@
     margin-top:15px;
 }
 /*service*/
-.single-service h2{
-    font-weight: bold;
-    font-size: 20px;
 
-}
 .single-service ul{
     border: 3px solid #f2f7fd;
     padding: 20px;
@@ -82,6 +75,8 @@
 }
 .single-service ul li{
     padding:10px 10px;
+}
+.single-service ul li:not(:last-of-type){
     border-bottom: 1px solid #ebf3fd;
 }
 .single-service ul li:hover{
